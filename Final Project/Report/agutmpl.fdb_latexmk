@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex agutmpl"] 1492292634 "agutmpl.aux" "agutmpl.bbl" "agutmpl" 1492292635
+["bibtex agutmpl"] 1492298318 "agutmpl.aux" "agutmpl.bbl" "agutmpl" 1492298319
   "./agufull08.bst" 1228240420 42484 52bc4fbbc5e52f1f4d75fb58363e06f8 ""
-  "agutmpl.aux" 1492292634 1198 5ebad69e318ecd59a348571694b67320 ""
+  "agutmpl.aux" 1492298319 1193 b7228d51493faa2642c7005d123bace7 ""
   "agutmpl.bcf" 0 -1 0 ""
   "sources.bib" 1492116106 11255 dbf30e867653250618bd9a6703536f37 ""
   (generated)
-  "agutmpl.bbl"
   "agutmpl.blg"
-["pdflatex"] 1492292634 "agutmpl.tex" "agutmpl.pdf" "agutmpl" 1492292635
+  "agutmpl.bbl"
+["pdflatex"] 1492298318 "agutmpl.tex" "agutmpl.pdf" "agutmpl" 1492298319
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -33,8 +33,8 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1463608860 7612 729a8cc22a1ee0029997c7f74717ae05 ""
@@ -63,10 +63,10 @@
   "Figures/Herrendorfer/ngeo2427-f2.jpeg" 1491493617 171450 18335a98655210f36e643b96b55a7d1a ""
   "Figures/Herrendorfer/ngeo2427-f3.jpeg" 1491493628 340922 dfc22b123da96060b9220fc6903b6e26 ""
   "agutex.cls" 1492115513 224389 d1763754ff6f8ebf42b7b342e5ca9c99 ""
-  "agutmpl.aux" 1492292634 1198 5ebad69e318ecd59a348571694b67320 ""
-  "agutmpl.bbl" 1492292634 953 f639456ec30879547bbb078fe6669005 "bibtex agutmpl"
-  "agutmpl.tex" 1492292633 22664 0911c84783a97e26542c7a9185bf4cba ""
+  "agutmpl.aux" 1492298319 1193 b7228d51493faa2642c7005d123bace7 ""
+  "agutmpl.bbl" 1492298318 953 f639456ec30879547bbb078fe6669005 "bibtex agutmpl"
+  "agutmpl.tex" 1492298317 23060 d541f8748ef23b5ddfcafd76944bfc09 ""
   (generated)
-  "agutmpl.pdf"
-  "agutmpl.log"
   "agutmpl.aux"
+  "agutmpl.log"
+  "agutmpl.pdf"

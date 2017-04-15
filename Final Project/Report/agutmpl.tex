@@ -152,21 +152,22 @@ Praesent volutpat, nibh in dignissim commodo, tellus justo consequat erat, vel c
 
 \section{Methods}
 
-Suspendisse viverra eleifend nulla at facilisis. Nullam eget tellus orci. Cras sit amet lorem velit. Maecenas rhoncus pellentesque orci eget vulputate. Phasellus massa nisi, mattis nec elementum accumsan, blandit non neque. In ac enim elit, sit amet luctus ante. Cras feugiat commodo lectus, vitae convallis dui sagittis id. In in tellus lacus, sed lobortis eros. Phasellus sit amet eleifend velit. Duis ornare dapibus porttitor. Maecenas eros velit, dignissim at egestas in, tincidunt lacinia erat. Proin elementum mi vel lectus suscipit fringilla. Mauris justo est, ullamcorper in rutrum interdum, accumsan eget mi. Maecenas ut massa aliquet purus eleifend vehicula in a nisi. Fusce molestie cursus lacinia.
+\citet{Herrendorfer2015} model subduction zones using a two-dimensional numerical model of a simplified and scaled subduction zone to investigate the role of the seimogenic zone downdip width. In this model a rigid plate subducts beneath a visco-elastic wedge at an angle of $10^\circ$. They use conservative finite differences to solve for conservation of mass (EQUATION) and momentum (EQNARRAY) under the assumption of incompressibility ($\nabla \cdot \vec{v}$). Where $v_x$ and $v_y$ are horizontal and vertical velocities, $\sigma'$ is the stress tensor, P is pressure, g is the gravitaional constant and $\rho$ is density. The authors use a constitutive relationship that connects the deviatoric stresses ($\sigma'_{ij}$) and strain rates ($\dot{\epsilon}'_{ij}$) applying linear elasticity and Newtonian viscosity:
 
-\begin{equation}
-\label{eq:emc}
-e = mc^2
-\end{equation}
+%\begin{equation}
+	
+%\end{equation}
+Plastic flow sets in when the plastic flow potential reaches the local pressure-dependt yield strength.
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris eu sapien nunc, sit amet accumsan dui. Nulla ac diam ut nunc placerat semper eget et libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras hendrerit ullamcorper sapien vitae luctus. Quisque vel diam massa. Vestibulum dui nibh, facilisis vel vestibulum eu, viverra in quam.
+The effective friction coefficient is rate-dependent and depends on the visco-plastic slip velocity. 
 
-\begin{eqnarray}
-  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
-        && + (y - y_{0}) \sin \Theta  \nonumber \\
-  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
-        && + (y - y_{0}) \cos \Theta.
-\end{eqnarray}
+During plastic deformation elastic strain is zero and the second invariant of deviatoric stresses must be constant. 
+
+The total strain is the sum of the viscous and plastic strain rates 
+
+
+ The authors define subcritical ruptures as events that fail to propagate a long distance out of their nucleation region. Pulse-like ruptures propagate further than subcritical ruptures but have a local duration of coseismic displacements that is short compared to the total rupture duration. In a crack-like rupture most of the rupture area continues to slip until the end of the rupture. See column three of figure \ref{fig:ruptureStyle} for plots of the horizontal velocity through time and distance from backstop for each of the rupture types.
+
 
 %-----------------------------------------------------------------------------------------------------------
 %									Data and Results

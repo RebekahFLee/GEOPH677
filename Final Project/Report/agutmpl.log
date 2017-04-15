@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 APR 2017 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 APR 2017 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,20 +299,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./Figures/Goldfinger/F4large.jpg, id=11, 308.352pt x 74.679pt>
+<./Figures/Goldfinger/F4large.jpg, id=13, 308.352pt x 74.679pt>
 File: ./Figures/Goldfinger/F4large.jpg Graphic file (type jpg)
 
 <use ./Figures/Goldfinger/F4large.jpg>
-Package pdftex.def Info: ./Figures/Goldfinger/F4large.jpg used on input line 17
-9.
+Package pdftex.def Info: ./Figures/Goldfinger/F4large.jpg used on input line 18
+0.
 (pdftex.def)             Requested size: 541.203pt x 131.089pt.
 
-Overfull \hbox (23.36134pt too wide) in paragraph at lines 178--180
+Overfull \hbox (23.36134pt too wide) in paragraph at lines 179--181
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
@@ -327,10 +327,10 @@ File: Figures/Herrendorfer/ngeo2427-f2.jpeg Graphic file (type jpg)
 
 <use Figures/Herrendorfer/ngeo2427-f2.jpeg>
 Package pdftex.def Info: Figures/Herrendorfer/ngeo2427-f2.jpeg used on input li
-ne 194.
+ne 195.
 (pdftex.def)             Requested size: 492.0pt x 136.26212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
@@ -339,10 +339,10 @@ File: Figures/Herrendorfer/ngeo2427-f3.jpeg Graphic file (type jpg)
 
 <use Figures/Herrendorfer/ngeo2427-f3.jpeg>
 Package pdftex.def Info: Figures/Herrendorfer/ngeo2427-f3.jpeg used on input li
-ne 199.
+ne 200.
 (pdftex.def)             Requested size: 492.0pt x 386.94283pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
@@ -368,10 +368,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [6] (./agutmpl.aux) ) 
 Here is how much of TeX's memory you used:
- 2369 strings out of 493014
- 32102 string characters out of 6133351
- 106325 words of memory out of 5000000
- 5910 multiletter control sequences out of 15000+600000
+ 2368 strings out of 493014
+ 32094 string characters out of 6133351
+ 105316 words of memory out of 5000000
+ 5909 multiletter control sequences out of 15000+600000
  13317 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,26p,1228b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -381,10 +381,10 @@ onts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i12.pfb>
-Output written on agutmpl.pdf (6 pages, 703472 bytes).
+/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti12.pfb>
+Output written on agutmpl.pdf (6 pages, 704253 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
