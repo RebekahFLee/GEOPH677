@@ -71,13 +71,13 @@ end
 
 % create grids of spherical coordinates
 dist = 1; % create distances (unitless)
-elev = deg2rad(take_off - 90); % get elevation angle for sph2cart
+elev = deg2rad(90 - take_off); % get elevation angle for sph2cart
 azimuth = deg2rad(360-AZ); % convert azimuths to radians and azimuth from X axis counterclockwise
 [elev, azimuth, distance] = meshgrid(elev,azimuth,dist); 
 
 % convert coordinates to cartesian
 [y, x, z] = sph2cart(azimuth,elev,distance);
-
+z = -z;
 if magoff
   U_p = sign(U_p); 
   U_SV = sign(U_SV);
@@ -90,7 +90,8 @@ subplot(3,2,1) % 3D plot
 surf(x,y,z,U_p,'EdgeColor','none')
 
 colorbar;
-colormap('gray');
+ax = gca;
+ax.Color = 'blue';
 %view([-38 45])
 
 fsize = 16;
@@ -105,8 +106,9 @@ surf(x,y,z,U_p,'EdgeColor','none')
 
 view([-90 90])
 colorbar;
-colormap('gray')
 axis ij
+ax = gca;
+ax.Color = 'blue';
 
 fsize = 16;
 xlabel('x - North','Fontsize',fsize)
@@ -120,7 +122,8 @@ subplot(3,2,3) % 3D plot
 surf(x,y,z,U_SV,'EdgeColor','none')
 
 colorbar;
-colormap('gray');
+ax = gca;
+ax.Color = 'blue';
 % view([-38 45])
 
 fsize = 16;
@@ -135,8 +138,9 @@ surf(x,y,z,U_SV,'EdgeColor','none')
 
 view([-90 90])
 colorbar;
-colormap('gray')
 axis ij
+ax = gca;
+ax.Color = 'blue';
 
 fsize = 16;
 xlabel('x - North','Fontsize',fsize)
@@ -150,8 +154,9 @@ subplot(3,2,5) % 3D plot
 surf(x,y,z,U_SH,'EdgeColor','none')
 
 colorbar;
-colormap('gray');
 caxis([-1 1])
+ax = gca;
+ax.Color = 'blue';
 % view([-38 45])
 
 fsize = 16;
@@ -166,9 +171,10 @@ surf(x,y,z,U_SH,'EdgeColor','none')
 
 view([-90 90])
 colorbar;
-colormap('gray')
 caxis([-1 1])
 axis ij
+ax = gca;
+ax.Color = 'blue';
 
 fsize = 16;
 xlabel('x - North','Fontsize',fsize)
@@ -177,4 +183,10 @@ title('Radiation pattern SH','Fontsize',fsize)
 set( findall( gcf, '-property', 'TickLabelInterpreter' ), 'TickLabelInterpreter', 'Latex' );
 
 set(gcf,'Position',[192 56 736 749])
+
+if magoff ==1
+colormap('gray');
+else
+colormap('parula')
+end
 end

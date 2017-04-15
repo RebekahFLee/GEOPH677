@@ -1,59 +1,19 @@
-%% Homework 4: Moment Tensors 
-% Rebekah Lee
-%% Part 1: Moment Tensors and Radiation Patterns
 %%
-
-magoff = 1; % 1 to plot the sign
-%% 
-% 1. Right- lateral strike slip fault
-M = [0, 1, 0; 1, 0, 0; 0, 0, 0];
-seismicMoment(M,magoff);
-%%
-% 2. Left-lateral strike slip fault
-M = [0, -1, 0; -1, 0, 0; 0, 0, 0];
-seismicMoment(M,magoff)
-%%
-% 3.
-M = [.4581, -0.2460, 0.4192;-0.2460, -.9332, -.2560; 0.4192 -0.256 0.4751];
-% m0 = 1/3*trace(M)*eye(3);
-% Mprime = M - m0;
-seismicMoment(M,magoff);
-%%
-% 4.
-M = [-0.5587, -0.7589, -0.1949; -0.7589, 0.6203, -0.1833; -0.1949, -0.1833, -0.0618]; 
-seismicMoment(M,magoff)
-%%
-% 5.
-strike = 358;
-dip = 80;
-rake = 59;
-
-M = momentTensor(strike,dip,rake)
-seismicMoment(M,magoff)
-%%
-% 6.
-strike = 294;
-dip = 61;
-rake = 152;
-
-M = momentTensor(strike,dip,rake)
-seismicMoment(M,magoff)
-%% Part 2: Nodal Planes
 % Part 2, Number 1
 %
 % #1 and #2 nodal plane azimuths are both 0 and 90 degrees. There is zero displacement on the nodal planes.
 % This happens along the arc lines the white and black.
 %
-% #3 looks like the line is at about 35 degrees from North and on the
+% # 3 looks like the line is at about 35 degrees from North and on the
 % second arc at about 125 degrees
 %
-% #4  Nodal plane at about 75 and 170 degrees. I think this one is
+% # 4  Nodal plane at about 75 and 170 degrees. I think this one is
 % slightly dipping and the 2D version doesn't look like it's quite at 165.
 %
-% #5 We are given an Azimuth of 358 which is what looks like the first arc with a thin shaded area.
+% # 5 We are given an Azimuth of 358 which is what looks like the first arc with a thin shaded area.
 % The other plane the other nodal plane is close to 90 degrees. 
 %
-% #6 We are given an Azimuth of 294, the other nodal plane is at about 135
+% # 6 We are given an Azimuth of 294, the other nodal plane is at about 135
 % degrees. Not exactly 90 degrees apart since the fault is dipping at 61
 % degrees.
 %%
@@ -99,10 +59,4 @@ seismicMoment(M,magoff)
 % each close to 350 degrees (# 5). In other words the amplitudes reach an
 % absolute maximum in only two of the four map-vie quadrients.
 % 
-% For the SV waves the maximums shift radially inward. With increasing
-% azimuth the "missing" high and lows start to come back into the picture,
-% especially in the figure for number five. The relative amplitudes overall
-% are smaller than the P and SH waves. 
-%
-% The SH amplitudes are rotated and smeared compared to the P wave with 
-% more smearing at shallower dips and increasing azimuth (#5, 6).
+% 

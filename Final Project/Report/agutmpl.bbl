@@ -1,0 +1,21 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Goldfinger et~al.}(2013)\textit{Goldfinger, Ikeda, Yeats, and
+  Ren}}]{Goldfinger2013}
+Goldfinger, C., Y.~Ikeda, R.~S. Yeats, and J.~Ren (2013), {Superquakes and
+  Supercycles}, \textit{Seismological Research Letters}, \textit{84}(1),
+  24--32, \doi{10.1785/0220110135}.
+
+\bibitem[{\textit{Herrend{\"{o}}rfer et~al.}(2015)\textit{Herrend{\"{o}}rfer,
+  van Dinther, Gerya, and Dalguer}}]{Herrendorfer2015}
+Herrend{\"{o}}rfer, R., Y.~van Dinther, T.~Gerya, and L.~A. Dalguer (2015),
+  {Earthquake supercycle in subduction zones controlled by the width of the
+  seismogenic zone}, \textit{Nature Geoscience}, \textit{8}(6), 471--474,
+  \doi{10.1038/ngeo2427}.
+
+\end{thebibliography}
