@@ -149,22 +149,53 @@ Nam fermentum sapien at enim varius consectetur. Quisque lobortis imperdiet maur
 Praesent volutpat, nibh in dignissim commodo, tellus justo consequat erat, vel consequat mi arcu vel lectus. Aliquam a tellus nec felis sagittis consequat. Quisque convallis imperdiet neque a tempor. Nulla non erat urna. Mauris vel lorem magna, tristique auctor ipsum. Aliquam pharetra eleifend massa. Donec porttitor sagittis luctus. Aliquam pretium luctus leo quis congue. Morbi vel felis mi. Suspendisse viverra tortor pretium orci lacinia eleifend. Phasellus aliquam, nunc eu cursus feugiat, erat odio porttitor libero, quis accumsan orci ipsum ut lorem. Vestibulum pharetra malesuada egestas. Sed non orci sit amet erat suscipit fringilla in et diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut rhoncus nulla. Aenean porta rhoncus suscipit.
 
 %------------------------------------------------
-
+\newpage
 \section{Methods}
 
-\citet{Herrendorfer2015} model subduction zones using a two-dimensional numerical model of a simplified and scaled subduction zone to investigate the role of the seimogenic zone downdip width. In this model a rigid plate subducts beneath a visco-elastic wedge at an angle of $10^\circ$. They use conservative finite differences to solve for conservation of mass (EQUATION) and momentum (EQNARRAY) under the assumption of incompressibility ($\nabla \cdot \vec{v}$). Where $v_x$ and $v_y$ are horizontal and vertical velocities, $\sigma'$ is the stress tensor, P is pressure, g is the gravitaional constant and $\rho$ is density. The authors use a constitutive relationship that connects the deviatoric stresses ($\sigma'_{ij}$) and strain rates ($\dot{\epsilon}'_{ij}$) applying linear elasticity and Newtonian viscosity:
+\citet{Herrendorfer2015} model subduction zones using a two-dimensional numerical model of a simplified and scaled subduction zone to investigate the role of the seimogenic zone downdip width. In this model a rigid plate subducts beneath a visco-elastic wedge at an angle of $10^\circ$. The seismogenic zone has velocity weakening properties, whereas the aseismic zone has velocity strengthening properties. The authors use conservative finite differences to solve for conservation of mass (eq. \ref{eqn:mass}) and momentum (eq. \ref{eqn:momentum}) under the assumption of incompressibility ($\nabla \cdot \vec{v}$):
+\begin{equation}
+	\frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} = 0,
+	\label{eqn:mass}
+\end{equation}
+\begin{eqnarray}\hspace{5.8cm}
+\frac{\partial \sigma'_{xx}}{\partial x} + \frac{\sigma'_{yy}}{\partial y} - \frac{\partial P}{\partial x} = \rho\frac{Dv_x}{Dt} \nonumber 
+\end{eqnarray}
+
+\begin{equation}
+	\frac{\partial \sigma'_{yx}}{\partial x} + \frac{\sigma'_{yy}}{\partial y} - \frac{\partial P}{\partial y} = \rho\frac{Dv_y}{Dt} - \rho g
+	\label{eqn:momentum}
+\end{equation}
+% \begin{equation}
+%\frac{\partial \sigma'_{xx}}{\partial x} + \frac{\sigma'_{yy}}{\partial y} - \frac{\partial P}{\partial x} = \rho\frac{Dv_x}{Dt} \nonumber\\
+	%\frac{\partial \sigma'_{yx}}{\partial x} + \frac{\sigma'_{yy}}{\partial y} - \frac{\partial P}{\partial y} = \rho\frac{Dv_y}{Dt} - \rho g 
+	
+% \end{equation}
+where $v_x$ and $v_y$ are horizontal and vertical velocities, $\sigma'$ is the stress tensor, P is pressure, g is the gravitaional constant and $\rho$ is density. The authors use a constitutive relationship that connects the deviatoric stresses ($\sigma'_{ij}$) and strain rates ($\dot{\epsilon}'_{ij}$) applying linear elasticity and Newtonian viscosity: EQN4HERE
 
 %\begin{equation}
 	
 %\end{equation}
-Plastic flow sets in when the plastic flow potential reaches the local pressure-dependt yield strength.
+where G is shear modulus, $\eta$ is effective viscosity, $\sigma'_{II} = \sqrt{\sigma'^2_{xx} + \sigma'^2_{xy}}$ is the plastic flow potential, and $\chi$ is a plastic multiplier connecting plastic strain rates and stresses.
 
-The effective friction coefficient is rate-dependent and depends on the visco-plastic slip velocity. 
+Flow becomes plastic when the plastic flow potential, $\sigma'_{II}$ reaches the local pressure-dependent yield strength, $\sigma_{yield}$:
 
-During plastic deformation elastic strain is zero and the second invariant of deviatoric stresses must be constant. 
+\begin{equation}
+	 	\sigma'_{II} = \sigma_{yield} = C + \mu_{eff} \cdot P, 
+ \end{equation} 
+where C is cohesion and $\mu_{eff}$ is the effective friction coefficient. $\mu_{eff}$ is strongly rate dependent as it depends on the visco-plastic slip velocity, $V_{vp}$:
+\begin{equation}
+ 	\mu_{eff} = \mu_s(1-\gamma) + \mu_s\frac{\gamma}{1 + \frac{V_{vp}}{V_c}},
+ \end{equation} 
+ where  $\gamma$ is amount of weakening ($1 - \frac{\mu_s}{\mu_d}$), $\mu_s$ and $\mu_d$ are static and dynamic coefficients, respectively, and $V_c$ is characteristic slip velocity. 
 
-The total strain is the sum of the viscous and plastic strain rates 
-
+During plastic deformation elastic strain is zero and the second invariant of deviatoric stresses must be constant. The total strain rate therefore is the sum of the viscous and plastic strain rates, so that the plastic strain is $\dot{\epsilon}'_{II} - \dot{\epsilon}'^{(viscous)}_{II}$ (where $\dot{\epsilon}'_{II} = \sqrt{\dot{\epsilon}'^2_{xx} + \dot{\epsilon}'^2_{xy}}$ ) and the visco-plastic viscosity is:
+\begin{equation}
+ 	\eta_{vp} = \eta\frac{\sigma'_{II}}{\eta\chi + \sigma'_{II}},
+ \end{equation} 
+with 
+\begin{equation}
+	\chi = 2(\dot{\epsilon}'_{II} - \dot{\epsilon}'^{(viscous)}_{II}) = 2(\dot{\epsilon}'_{II} - \frac{1}{2\eta}\sigma'_{II})
+\end{equation}
 
  The authors define subcritical ruptures as events that fail to propagate a long distance out of their nucleation region. Pulse-like ruptures propagate further than subcritical ruptures but have a local duration of coseismic displacements that is short compared to the total rupture duration. In a crack-like rupture most of the rupture area continues to slip until the end of the rupture. See column three of figure \ref{fig:ruptureStyle} for plots of the horizontal velocity through time and distance from backstop for each of the rupture types.
 
@@ -176,8 +207,8 @@ The total strain is the sum of the viscous and plastic strain rates
 The tsunami record near Sendai, Japan shows events in 1896, 1611 and 869. The largest is the 869 even with tsunami penetrating $3-4$ km inland, similar to the 2011 earthquake. There is also evidence for two predecessors with tsunamis reaching the same distance inland as the 869 and 2011 earthquakes. This evidence supports the existence of periodic outsized earthquakes greater than magnitude 9 with a recurrance interval between $800 -1200$ years \citep{Goldfinger2013}.
 
 \begin{figure}
-\hspace{-1cm}
-	\includegraphics[width=1.1\linewidth]{./Figures/Goldfinger/F4large.jpg}
+% \hspace{-1cm}
+	\includegraphics[width=1\linewidth]{./Figures/Goldfinger/F4large.jpg}
 	\caption{caption here}
 	\label{fig:energyCycle}
 \end{figure}
