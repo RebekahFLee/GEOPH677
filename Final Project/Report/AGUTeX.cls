@@ -142,12 +142,12 @@ This version is dated \currversion^^J^^J}
    \@setfontsize\small\@ixpt{22pt}%
 %  C&G 11/5/01  \@setfontsize\small\@ixpt{17}%
 \else
-   \@setfontsize\small\@ixpt{11}%
+   \@setfontsize\small\@ixpt{12}%
 \fi
 \ifgalley
-\baselineskip=10pt
+\baselineskip=12pt
 \else
-\baselineskip=10pt plus .001pt minus 1pt
+\baselineskip=12pt plus .001pt minus 1pt
 \parskip=0pt % plus .001pt %% amyh
 \fi
    \abovedisplayskip 10\p@ %\@plus.001\p@ 
@@ -4636,7 +4636,7 @@ Abstract.}\hskip1em \relax\ifdim\belowabstractnameskip>0pt %
 \theabstract%
 \vskip\belowabstractskip
 }
-\newpage
+%\newpage
 \fi\fi}
 
 \def\endarticle{\notes

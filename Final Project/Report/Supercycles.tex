@@ -72,6 +72,7 @@
 %  Uncomment the following command to include .eps files (comment out this line for draft format):
 %\usepackage[dvips]{graphicx}
 \usepackage{graphicx}
+% \usepackage[margin=1in]{geometry}
 
 % Substitute one of the following for [dvips] above if you are using a different driver program and want to proof your illustrations on your machine:
 % [xdvi], [dvipdf], [dvipsone], [dviwindo], [emtex], [dviwin],
@@ -98,7 +99,7 @@
 %------------------------------------------------
 
 % Corresponding author mailing address and e-mail address:
-\authoraddr{}
+\authoraddr{Department of Geosciences, Boise State University, Boise, ID}
 
 %----------------------------------------------------------------------------------------
 
@@ -108,7 +109,7 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\title{Title of the article}
+\title{Supercycles}
 
 %----------------------------------------------------------------------------------------
 %	AUTHORS AND AFFILIATIONS
@@ -119,6 +120,8 @@
 % \altaffilmark will produce footnote; matching \altaffiltext will appear at bottom of page.
 
 \authors{Rebekah Lee}
+\authors{May 1, 2017}
+\altaffiltext{1}{GEOPH 677 Term Project, Spring 2017}
 
 
 %----------------------------------------------------------------------------------------
@@ -127,32 +130,39 @@
 
 % Do NOT include any \begin...\end commands within the body of the abstract.
 
-% \begin{article}
+\begin{abstract}
 
-\section{Abstract}
+% \section{Abstract}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula metus sapien. Suspendisse pulvinar, felis ut hendrerit aliquet, dui nisi bibendum erat, fermentum mattis enim nibh id arcu. Vestibulum ultrices eros sed odio tincidunt bibendum. Pellentesque fermentum ante vel nulla commodo fermentum. Vestibulum in augue sit amet libero viverra accumsan eu at magna. Sed at ligula quis nibh pharetra facilisis non eu libero. Suspendisse non quam sit amet massa luctus interdum sit amet in purus. Integer id orci elit, vitae sollicitudin lectus.
 
-
+\end{abstract}
 %----------------------------------------------------------------------------------------
 %	ARTICLE CONTENT
 %----------------------------------------------------------------------------------------
 
 % The body of the article must start with a \begin{article} command
 % \end{article} must follow the references section, before the figures and tables.
-
+\begin{article}
 
 \section{Introduction}
+In ordinary seismic cycles, large and great earthquakes release elastic strain accumulated during the previous interseismic period at highly locked asperities, resetting the slip and moment deficit \citep{Nocquet2016}. This implies a local reduction in seismic hazard. The next segment to rupture would be the one with no recent seismic activity. 
 
-Nam fermentum sapien at enim varius consectetur. Quisque lobortis imperdiet mauris, et accumsan libero vulputate vitae. Integer lacinia purus vel metus tempus suscipit. Curabitur ac sapien quis mauris euismod commodo. Sed pharetra sem elit. Fusce ultrices, mauris eu fermentum tempor, tellus sem ornare lectus, in convallis nunc urna id dolor. Donec convallis ligula vitae sem viverra fermentum. Mauris in ullamcorper erat. Donec ultrices tempus nibh quis vestibulum. This statement requires citation \citep{Goldfinger2013}. This one is an in-text citation because the authors of \citet{Herrendorfer2015} are specifically mentioned.
+This seismic gap theory does not work well in reality. The same segment can rupture sooner and with larger magnitude than expected based on convergent rate \citep{Nocquet2016}. The 2004 Sumatra and 2011 Tohoku, Japan Earthquakes were both $\sim M_w 9$ and generated devastating tsunamis. Both of these regions were previously thought to have maximum expected earthquake magnitudes of $\sim 8.4$. This suggests that some earthquakes can borrow energy from previous seismic cycles. When this occurs, a cluster of smaller earthquakes can lead to a superevent, greater than magnitude 8.5. This cluster of events is referred to as a supercycle. 
 
-Praesent volutpat, nibh in dignissim commodo, tellus justo consequat erat, vel consequat mi arcu vel lectus. Aliquam a tellus nec felis sagittis consequat. Quisque convallis imperdiet neque a tempor. Nulla non erat urna. Mauris vel lorem magna, tristique auctor ipsum. Aliquam pharetra eleifend massa. Donec porttitor sagittis luctus. Aliquam pretium luctus leo quis congue. Morbi vel felis mi. Suspendisse viverra tortor pretium orci lacinia eleifend. Phasellus aliquam, nunc eu cursus feugiat, erat odio porttitor libero, quis accumsan orci ipsum ut lorem. Vestibulum pharetra malesuada egestas. Sed non orci sit amet erat suscipit fringilla in et diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut rhoncus nulla. Aenean porta rhoncus suscipit.
+Literature related to supercycles has identified several potential segments of subduction zones thought capable of producing supercycles \citep{Goldfinger2013, Herrendorfer2015, Nocquet2016}. These areas have been identified through paleoseismic and geological data due to the short time period of historical and seismological data. Figure (????) shows some of these potential supercycle subduction zones. \citet{Herrendorfer2015} observe that all areas of suggested supercycles have larger than average downdip width. They hypothesize that the larger than average width of the seismogenic zone is a controlling factor on producing ordinary or super seismic cycles. In the following sections, I will review case studies from \citet{Goldfinger2013}, paying particular attention to the Cascadia subduction zone, and then describe the numerical modeling from \citet{Herrendorfer2015}. SAY SOMETHING ELSE HERE ABOUT WHAT CONCLUSIONS I CAN DRAW FROM THE TWO DATA SETS.
 
 %------------------------------------------------
-\newpage
+
 \section{Methods}
 
-\citet{Herrendorfer2015} model subduction zones using a two-dimensional numerical model of a simplified and scaled subduction zone to investigate the role of the seimogenic zone downdip width. In this model a rigid plate subducts beneath a visco-elastic wedge at an angle of $10^\circ$. The seismogenic zone has velocity weakening properties, whereas the aseismic zone has velocity strengthening properties. The authors use conservative finite differences to solve for conservation of mass (eq. \ref{eqn:mass}) and momentum (eq. \ref{eqn:momentum}) under the assumption of incompressibility ($\nabla \cdot \vec{v}$):
+\subsection{Case Studies}
+
+\citet{Goldfinger2013} give an overview of some of the data and methods available in Japan, the Himalayan front and the Cascadias. Each case study uses paleoseismic data. The Cascadia case study in particular demonstrates how paleoseismic data can be used to construct a longer time series of past events. For this case study, \citet{Goldfinger2013} demonstrate how paleoseismic data can be used to construct a longer time series of past events. The authors use turbidites to construct a 10k year time series before present. Turbidites are deposits from slope failure along the continental margin at river deltas. These failures can be caused by excessive sediment load or by shaking from earthquakes. \citet{Goldfinger2013} correlate events from turbidite cores across different depositional environments. They find that the same event correlates with the mass and thickness of turbidite deposits. This suggests that these deposits were created by shaking from earthquakes. They model coseismic energy release as proportional to mass of turbidite triggered in shaking and assumed that between events strain energy accumulated in proportion to the plate convergence rate. They also assume coupling coeffiecient of one and a zero net energy gain over the time series. I show their resulting time series in the next section. 
+
+\subsection{Numerical Modeling}
+
+\citet{Herrendorfer2015} test the link between the width of the seismogenic zone and the type of earthquake cycle using a two-dimensional numerical model of a simplified and scaled subduction zone. In their model, a rigid plate subducts beneath a visco-elastic wedge at an angle of $10^\circ$. The seismogenic zone has velocity weakening properties, whereas the aseismic zone has velocity strengthening properties. They use conservative finite differences to solve for conservation of mass (eq. \ref{eqn:mass}) and momentum (eq. \ref{eqn:momentum}) under the assumption of incompressibility ($\nabla \cdot \vec{v}$):
 \begin{equation}
 	\frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} = 0,
 	\label{eqn:mass}
@@ -197,14 +207,20 @@ with
 	\chi = 2(\dot{\epsilon}'_{II} - \dot{\epsilon}'^{(viscous)}_{II}) = 2(\dot{\epsilon}'_{II} - \frac{1}{2\eta}\sigma'_{II})
 \end{equation}
 
- The authors define subcritical ruptures as events that fail to propagate a long distance out of their nucleation region. Pulse-like ruptures propagate further than subcritical ruptures but have a local duration of coseismic displacements that is short compared to the total rupture duration. In a crack-like rupture most of the rupture area continues to slip until the end of the rupture. See column three of figure \ref{fig:ruptureStyle} for plots of the horizontal velocity through time and distance from backstop for each of the rupture types.
-
+ 
 
 %-----------------------------------------------------------------------------------------------------------
 %									Data and Results
 %-----------------------------------------------------------------------------------------------------------
 \section{Data and Results}
-The tsunami record near Sendai, Japan shows events in 1896, 1611 and 869. The largest is the 869 even with tsunami penetrating $3-4$ km inland, similar to the 2011 earthquake. There is also evidence for two predecessors with tsunamis reaching the same distance inland as the 869 and 2011 earthquakes. This evidence supports the existence of periodic outsized earthquakes greater than magnitude 9 with a recurrance interval between $800 -1200$ years \citep{Goldfinger2013}.
+
+\subsection{Case Studies from Paleoseismic Data}
+
+\subsubsection{Japan Trench and Himalayan Front}
+
+For the Japan case study, \citet{Goldfinger2013} review the tsunami record. In the Sendai area of Japan, there is record of an event in 869 as well as two predecessors that each produced a tsunami reaching 3-4 km inland, similar to the 2011 earthquake. These large tsunamis support the existence of periodic outsized earthquakes (greater than $M_w$ 9) with recurrence intervals between 800-1200 years. 
+
+Along the Himalayan front, paleoseismic evidence shows earthquakes that produced surface displacement of up to 26 meters. No modern events have produced surface rupture. Four modern earthquakes between 1897 and 1950 were close to the maximum considered earthquake with magnitudes between 7.8 and 8.4. This suggests that the front is capable of producing even more damaging earthquakes. The Japan and Himalayan cases studies both suggest that the maximum magnitude a fault system may be capable of producing may be unknown. 
 
 \begin{figure}
 % \hspace{-1cm}
@@ -213,12 +229,9 @@ The tsunami record near Sendai, Japan shows events in 1896, 1611 and 869. The la
 	\label{fig:energyCycle}
 \end{figure}
 
+\subsubsection{Cascadian Subduction Zone}
 
-\citet{Goldfinger2013} identify the Cascadia subduction zone as another area likely to produce supercycle earthquakes. They correlate turbidite cores along the subduction zone and find consistency between sites for the same events in terms of mass size. 
-
-Figure {\bf \ref{fig:energyCycle}} shows the results from modeling the energy state in the Cascadia subduction zone \citep{Goldfinger2013}. 
-
-They identify four clusters from the past 10 thousand years. Cluster four shows an even energy state before falling to a low after a large event. Cluster 3 climbs steadily until falling to a similar low. During this period there are several seismic cycles with relatively low stress drops that do not relieve all of the accumulated strain. A total stress drop finally happens at the end of the cluster with an event much larger than the others within the same cluster. Cluster two differs from the previous in that it does not culminate in an oversized event. Rather, it climbs and then falls over several seismic cycles until it reaches a low energy value about 2500 years BP (1950). The end of the cluster marks a long gap of about 1,000 years of constant increase in energy. Cluster one then slowly decreases the energy state until the A.D. 1700 $M_w$ ~9.0 earthquake. \citep{Goldfinger2013} note that the scale factor is based on the condition of no net energy change over the 10,000 years but that changing this parameter does not change the pattern observed. The authors also note that the seismic coupling coefficient only changes the pattern if the value is allowed to vary between events. 
+ \citet{Goldfinger2013} identify four seismic clusters in their time series of the Cascadian subduction zone. Figure {\bf \ref{fig:energyCycle}} shows the the time series modeling the energy state using the turbidite mass and thickeness. Beginning from 10 thousand years before present (1950), cluster four shows an even energy state before falling to a low after a large event. Cluster three climbs steadily until falling to a similar low. During this period there are several seismic cycles with relatively low stress drops that do not relieve all of the accumulated strain. A total stress drop finally happens at the end of the cluster with an event much larger than the others within the same cluster. Cluster two differs from the previous in that it does not culminate in an over-sized event. Rather, it climbs and then falls over several seismic cycles until it reaches a low energy value about 2500 years BP. The end of the cluster marks a long gap of about 1,000 years of constant increase in energy. Cluster one then slowly decreases the energy state until the A.D. 1700 $M_w$ ~9.0 earthquake. \citep{Goldfinger2013} note that the scale factor is based on the condition of no net energy change over the 10,000 years but that changing this parameter does not change the pattern observed. The authors also note that the seismic coupling coefficient only changes the pattern if the value is allowed to vary between events. 
 
 The four clusters modeled by \citet{Goldfinger2013} demonstrate that some events in this subduction zone release energy from previous cycles. This subduction zone is neither slip nor time predictable. Energy release is not tied to recurrance intervals as some events can release energy accumulated from previous seismic cycles. The authors make a few observations relating the energy state to the behavior of the clusters. High energy states results in one very large event, (as in the case of cluster four), or a series of smaller events (as in cluster two). Low energy state results in a long gap in seismicity (cluster 2) or a series of small earthquakes with net energy gain over several cycles (cluster 3). 
 
@@ -233,7 +246,14 @@ The four clusters modeled by \citet{Goldfinger2013} demonstrate that some events
 	\label{fig:ruptureStyle}
 \end{figure}
 
-Figures {\bf \ref{fig:SZOwidth},\ref{fig:ruptureStyle}} show results from \citet{Herrendorfer2015}. Both systems show that events are triggered at low excess stress (Figure {\bf \ref{fig:SZOwidth}b}). However, the magnitudes at similar low stresses are much greater for the large width subduction zone, as shown in Figure ({\bf \ref{fig:SZOwidth}a}). Large width zones are characterized by supercycles that partially release stress but overall excess strength continues to decrease until at a low level. Figure {\bf \ref{fig:ruptureStyle}} shows strength excess (shaded green) before and after each of the event types. Subcritical events (a) nucleate close to the downdip limit of the seismogenic zone and transfers stress close to the stopping location (about 125 km from backstop). Pulse-like ruptures (b) nucleate from the downdip limit for short duration and transfer stress updip (about 300 km from backstop). These combine to shift the strain towards the center of the seismogenic zone that eventually results in the crack-like event (c) that ruptures the entire zone. 
+\subsection{Controls to type of Seismic Cycle}
+\citet{Herrendorfer2015} test the link between seismogenic zone width and the type of seismic cycle. Figure {\bf \ref{fig:SZOwidth} (a-b)} shows results from two end models. The large width (LW) seismogenic zone has a width of 248 Km and is plotted in blue. The small width (SW) model has a width of 102 Km and is plotted in red. 
+
+Both models show that events are triggered at low excess stress (Figure {\bf \ref{fig:SZOwidth}b}). The LW model events, however, have much greater magnitudes (represented by displacement in figure {\bf \ref{fig:SZOwidth}a}) at similar low stresses to the SW model. Large width zones are characterized by supercycles that partially release stress but overall excess strength continues to decrease to a low level, at which point a superevent occurs. 
+
+The authors define three different types of events in the LW model. The first type of ruptures they call subcritical and are events that fail to propagate a long distance out of their nucleation region but last for the duration of the rupture. The second, pulse-like, ruptures propagate further than subcritical ruptures but have a local duration of coseismic displacements that is short compared to the total rupture duration. Finally, in a crack-like rupture most of the rupture area continues to slip until the end of the rupture. See column three of figure \ref{fig:ruptureStyle} for plots of the horizontal velocity through time and distance from backstop for each of the rupture types.
+
+Figure {\bf \ref{fig:ruptureStyle}} shows strength excess (shaded green) before and after each of the event types. Subcritical events (a) nucleate close to the downdip limit of the seismogenic zone and transfers stress close to the stopping location (about 125 km from backstop). Pulse-like ruptures (b) nucleate from the downdip limit for short duration and transfer stress updip (about 300 km from backstop). These combine to shift the strain towards the center of the seismogenic zone that eventually results in the crack-like event (c) that ruptures the entire zone. 
 
 \citet{Herrendorfer2015} characterize events by an S parameter. The S parameter is a measure of the ratio the inital strength excess and stress change during an event. Figure {\bf \ref{fig:SZOwidth}} Large width model is characterized by a higher median S parameter (2.5) compared to the small width model (.25). The average strength excess is increased by increased width and leads to transition from crack-like ruptures of the entire zone to smaller preparatory subcritical and pulse-like ruptures leading up to culminating crack-like rupture. 
 
@@ -241,7 +261,7 @@ Figures {\bf \ref{fig:SZOwidth},\ref{fig:ruptureStyle}} show results from \citet
 
 \section{Conclusion}
 Examining the geologic record can give us a good indication of whether or not a subduction zone has produced oversized events in the past. This records include paleoseimic eveidence and tsunami observations and turbidite deposits when they can be attributed to shaking. As the data from the Cascadias demonstrates, there is no simply relationship to predict the size of earthquakes in subduction zones. For example, because supercycles use energy from previous seismic cycles, convergent rate is an unreliable predictor as some earthquakes may not result in a complete stress drop over the area of the fault. 
-
+\citep{Avouac2015}
 
 
 
@@ -300,6 +320,7 @@ Examining the geologic record can give us a good indication of whether or not a 
 \newpage
 \bibliography{sources}
 \bibliographystyle{agufull08}
+\end{article}
 %----------------------------------------------------------------------------------------
 %	FIGURES AND TABLES
 %----------------------------------------------------------------------------------------
@@ -348,6 +369,7 @@ Examining the geologic record can give us a good indication of whether or not a 
 
 
 \end{document}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
